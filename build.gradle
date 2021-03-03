@@ -34,8 +34,9 @@ dependencies {
     implementation project(':controller')
     implementation project(':model')
     implementation project(':view')
+    testImplementation 'org.testng:testng:+'
 }
 
 test {
-    useJUnitPlatform()
+    useTestNG()
 }
