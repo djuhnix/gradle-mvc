@@ -2,8 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'gradle-mvc.view'
-version '1.0-SNAPSHOT'
+group 'mvc.view'
 
 repositories {
     mavenCentral()

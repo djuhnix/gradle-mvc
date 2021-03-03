@@ -2,16 +2,15 @@ plugins {
     id 'java'
 }
 
-group 'gradle-mvc.controller'
-version '1.0-SNAPSHOT'
+group 'mvc.controller'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile project(':model')
-    compile project(':view')
+    implementation project(':model')
+    implementation project(':view')
 }
 
 test {
