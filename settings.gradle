@@ -1,2 +1,5 @@
 rootProject.name = 'graven-mvc'
+include 'model'
+include 'view'
+include 'controller'
 

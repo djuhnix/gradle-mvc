@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'gradle-mvc.controller'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':model')
+    compile project(':view')
+}
+
+test {
+    useJUnitPlatform()
+}
