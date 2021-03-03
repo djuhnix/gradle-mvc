@@ -1,18 +1,15 @@
 package mvc.model;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 public class Model implements IModel {
     protected static final String FILE = "message.txt";
     @Override
     public String getMessage() {
-        String path = Model.class.getResource(FILE).getFile();
+        InputStream inputFile = Model.class.getResourceAsStream(FILE);
 
         try(BufferedReader br = new BufferedReader(
-                new FileReader(path)
+                new InputStreamReader(inputFile)
         )) {
             return br.readLine();
         } catch (IOException e) {

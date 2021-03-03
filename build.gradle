@@ -32,6 +32,8 @@ repositories {
 
 dependencies {
     implementation project(':controller')
+    implementation project(':model')
+    implementation project(':view')
 }
 
 test {
